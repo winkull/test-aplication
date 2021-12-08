@@ -33,10 +33,10 @@
         @foreach ($contact as $index => $data)
             <tr>
                 <td>
-                    <input type="text" wire:model.defer="contact.{{$index}}.name" class="form-control" id="exampleInputName"> 
+                    <input type="text" wire:model.defer="contact.{{$index}}.name" value="{{$data['name']}}" class="form-control" id="exampleInputName"> 
                 </td>
                 <td>
-                    <input type="text" wire:model.defer="contact.{{$index}}.phone"  class="form-control" id="exampleInputPhone">
+                    <input type="text" wire:model.defer="contact.{{$index}}.phone" value="{{$data['phone']}}"  class="form-control" id="exampleInputPhone">
                 </td>
                 <td>
                     <center>
